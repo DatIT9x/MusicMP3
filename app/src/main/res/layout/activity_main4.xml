@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity">
+    <ViewFlipper
+        android:id="@+id/viewFlip"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:contentDescription="@string/g8"
+            android:scaleType="centerCrop"
+            android:src="@drawable/z2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:contentDescription="@string/g7"
+            android:scaleType="centerCrop"
+            android:src="@drawable/z3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g6"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/g2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g5"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/g3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g4"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/z4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g3"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/g5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g2"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/g6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g1"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/g7"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/g"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/g8"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+            <!--android:contentDescription="@string/ok"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/ok"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    </ViewFlipper>
+
+    <TextView
+        android:background="#FFF0F5"
+        android:textColor="#8BC34A"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="NHỊP ĐIỆU CẢM XÚC"
+        android:layout_below="@id/viewFlip"
+        android:id="@+id/texttieude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/linerimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/liner4"
+        android:layout_below="@id/texttieude"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/s2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/s1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/s3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/s4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/s5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/s6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/liner4"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:text="Trang chủ"
+            android:id="@+id/imagebt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#03A9F4" />
+        <Button
+            android:text="Nhạc MP3"
+            android:background="#03A9F4"
+            android:layout_weight="1"
+            android:id="@+id/imagebt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Nhạc MP4"
+            android:background="#03A9F4"
+            android:layout_weight="1"
+            android:id="@+id/imagebt2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
